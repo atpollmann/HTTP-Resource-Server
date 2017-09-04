@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit colors="true" bootstrap="./vendor/autoload.php">
+    <testsuites>
+        <testsuite name="all">
+            <directory>./tests</directory>
+        </testsuite>
+        <testsuite name="RequestParser">
+            <file>tests/EntityTypeTest.php</file>
+            <file>tests/ResourceTypeTest.php</file>
+            <file>tests/RequestParserTest.php</file>
+        </testsuite>
+        <testsuite name="ResourceServices">
+            <file>tests/ResourceServiceTest.php</file>
+            <file>tests/ImgProductServiceTest.php</file>
+            <file>tests/ServiceFactoryTest.php</file>
+        </testsuite>
+        <testsuite name="ParamsParsingService">
+            <file>tests/ParamsParsingServiceTest.php</file>
+        </testsuite>
+        <testsuite name="HttpRequest">
+            <file>tests/HttpRequestTest.php</file>
+        </testsuite>
+        <testsuite name="FileService">
+            <file>tests/FileServiceTest.php</file>
+        </testsuite>
+        <testsuite name="Agents">
+            <file>tests/InterventionImageAgentTest.php</file>
+        </testsuite>
+        <testsuite name="ResourceCacheService">
+            <file>tests/ResourceCacheServiceTest.php</file>
+        </testsuite>
+        <testsuite name="Config">
+            <file>tests/ConfigTest.php</file>
+        </testsuite>
+    </testsuites>
+</phpunit>
